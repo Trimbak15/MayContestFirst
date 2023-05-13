@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+
+/* need to provide box-sizing => border-box as it is imp to count each & every px / length */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #7ac4e1, #43fffc);
+}
+
+
+/* button styling is gonna be down */
+
+.container {
+    margin: 2% 5%;
+    text-align: center;
+}
+
+.button-div {
+    border: none;
+    border-style: double;
+    padding: 2%;
+}
+
+.button {
+    padding: 1% 2%;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.button:hover {
+    background-color: rgb(180, 22, 243);
+    transition-delay: .3s;
+    transition: linear .3s;
+    border: 2px solid rgb(103, 47, 163);
+    color: white;
+}
+
+
+/* styling for table */
+
+table {
+    margin-top: 5%;
+}
+
+table,
+td,
+th {
+    border: 1px solid #c03b8d;
+    text-align: left;
+}
+
+table {
+    border-collapse: separate;
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    padding: 15px;
+    word-break: break-all;
+}
+
+th {
+    padding: 15px;
+    background-color: #bb488f;
+    color: white;
+}
+
+td {
+    color: rgb(103, 47, 163);
+}
+
+
+/* make the table heading disable and after hitting the API call & if call get resolved call this table agian */
+
+#table-posts {
+    display: none;
+}
+
+#table-projects {
+    display: none;
+}
+
+#table-todos {
+    display: none;
+}
